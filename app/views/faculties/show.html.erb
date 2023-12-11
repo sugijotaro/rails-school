@@ -1,2 +1,9 @@
 <h1>Faculties#show</h1>
 <p><b><%= @faculty.name %></b></p>
+
+<h2>Students</h2>
+<ul>
+  <% @students.each do |student| %>
+    <li>番号: <%= student.id %>, 名前: <%= student.name %></li>
+  <% end %>
+</ul>
