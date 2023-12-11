@@ -1,0 +1,5 @@
+<h1><%= @course.name %></h1>
+<p>単位数: <%= @course.credit %></p>
+<% if @course.compulsory %>
+  <p>この科目は必修です。</p>
+<% end %>
